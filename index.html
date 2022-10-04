@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images\logo.png" sizes="32x32" type="image/x-icon">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <main>
+
+        <section class="form-1">
+            <p class="question-details">Question <span class="question-number">1</span> of <span class="total-questions"></span></p>
+            <p class="question"></p>
+            <div class="answer-box">
+                    <input type="radio" name="questions" class="input-radio" id="1">
+                    <label class="radio-label" for="1"></label>
+                    <input type="radio" name="questions" class="input-radio" id="2">
+                    <label class="radio-label" for="2"></label>
+                    <input type="radio" name="questions" class="input-radio" id="3">
+                    <label class="radio-label" for="3"></label>
+                    <input type="radio" name="questions" class="input-radio" id="4">
+                    <label class="radio-label" for="4"></label>
+            </div>
+            <input type="button" value="Back" id="back">
+            <input type="button" value="Next" id="next">
+            <input type="button" value="Submit" id="submit"> 
+        </section>
+
+        <section class="form-2 hidden">
+            <p class="result"></p>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

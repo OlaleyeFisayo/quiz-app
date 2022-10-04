@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-green: #16A085;
+    --green: #1D8348;
+    --gray: #B2BABB;
+    --light-gray: #D7DBDD;
+    --greenish: #0E6655;
+}
+
+body {
+    background: var(--light-green);
+}
+
+.form-1 {
+    background: white;
+    width: 450px;
+    height: auto;
+    padding: 15px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0, 0.2);
+    transition: 500ms ease-in-out;
+}
+
+.question-details {
+    color: var(--greenish);
+    border-bottom: 2px solid var(--gray);
+    padding-bottom: 5px;
+}
+
+.question {
+    margin: 10px 0 15px;
+    font-size: 1.1rem;
+}
+
+.answer-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio-label {
+    width: 100%;
+    background: var(--light-gray);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input[type="radio"]:checked + .radio-label {
+    background: var(--green);
+    color: white;
+}
+
+#next,
+#submit,
+#back {
+    margin: 10px 0 0;
+    background: var(--greenish);
+    border: none;
+    width: 70px;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-2 {
+    background: white;
+    width: 450px;
+    height: 100px;
+    padding: 15px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms ease-in-out;
+}
+
+.result{
+    background: var(--gray);
+    border-radius: 5px;
+    width: 95%;
+    text-align: center;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.hidden{
+    top: -50%;
+}
+
+@media (max-width: 449px) {
+
+    body {
+        padding: 10px;
+    }
+    
+    .form-1,
+    .form-2 {
+        width: 290px;
+    }
+
+}
