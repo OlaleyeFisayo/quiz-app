@@ -72,7 +72,7 @@ const result = document.querySelector(".result");
 totalQuestion.textContent = questions.length;
 answerArr = [];
 for(let i = 0; i < questions.length; i++) {
-    answerArr.push(" ")
+    answerArr.push(" ");
 }
 score = questions.length;
 
@@ -120,7 +120,6 @@ function checkSelected() {
     for(let i = 0; i < radios.length; i++) {
         if(radios[i].checked){
             answerArr[questionNumber.textContent-1] = radios[i].value;
-            console.log(answerArr);
             return;
         }
     }
